@@ -54,7 +54,9 @@ if __name__ == "__main__":
     # Widgets
     app.textbox = ctk.CTkTextbox(master=app, width=400, corner_radius=0)
     app.textbox.grid(row=0, column=0, sticky="nsew")
-    app.button = ctk.CTkButton(app, text="Reportar falla en el servidor", command=lambda:admin1.reportar_falla("Ha habido una falla"))
+    app.button = ctk.CTkButton(app, 
+                               text="Reportar falla en el servidor", 
+                               command=lambda:admin1.reportar_falla("Ha habido una falla"))
     app.button.grid(row=2, column=0, sticky="nsew")
 
 app.mainloop()
