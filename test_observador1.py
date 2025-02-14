@@ -1,3 +1,4 @@
+# FileName: test_observador1.py
 import pytest
 from unittest.mock import MagicMock
 from io import StringIO
@@ -74,3 +75,5 @@ def test_notificacion_imprime_mensaje():
     assert "Observador 1 ha recibido el mensaje: Estado actualizado a Nuevo estado" in captured_output.getvalue()
 
     sys.stdout = sys.__stdout__  # Restauramos la salida estandar a la original
+
+
